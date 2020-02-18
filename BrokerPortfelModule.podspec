@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BrokerPortfelModule'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'BrokerSDK.BrokerPortfelModule'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerPortfelModule'
   s.author           = 'BCS'
@@ -8,8 +8,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => "LICENSE" }
   s.platform     = :ios
   s.swift_versions = "5.0"
-  s.ios.deployment_target = '10.0'  
-  s.vendored_frameworks = 'BrokerPortfelModule.xcframework' 
-  s.dependency 'BrokerUIKit', '~> 2.0.5' 
+  s.ios.deployment_target = '11.0'  
+  s.vendored_frameworks = 'BrokerPortfelModule.framework' 
+  s.public_header_files = '*.framework/**/*.h'
+  s.source_files = '*.framework/**/*.h' 
   s.dependency 'BCSUniverse', '~> 1.0.8' 
+  s.dependency 'BrokerUIKit', '~> 2.0.5'  
 end
