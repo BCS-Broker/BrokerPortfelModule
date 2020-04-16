@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BrokerPortfelModule'
-  s.version          = '2.0.2'
+  s.version          = '2.1.0'
   s.summary          = 'BrokerSDK.BrokerPortfelModule'
   s.homepage         = 'https://github.com/BCS-Broker/BrokerPortfelModule'
   s.author           = 'BCS'
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.public_header_files = '*.framework/**/*.h'
   s.source_files = '*.framework/**/*.h' 
   s.dependency 'BCSUniverse', '~> 1.0.8' 
-  s.dependency 'BrokerUIKit', '~> 2.0.5'  
+  s.dependency 'BrokerUIKit', '~> 2.1.0'  
 end
